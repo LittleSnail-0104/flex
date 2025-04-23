@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>魏子翔的的作業</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  background: url('9647422dfc0c3f3d5942b1d2050106d3.gif') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+  animation: fadeInBody 1s ease;
+}
+
+/* 頁首區塊 */
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 40px 20px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header .sub {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* 卡片內容主體 */
+.container {
+  background-color: rgba(248, 224, 224, 0.85);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 850px;
+  margin: 40px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* 卡片按鈕排列區 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* 卡片樣式 */
+.card {
+  background: rgb(229, 250, 255);
+  border-radius: 16px;
+  padding: 20px 10px;
+  font-weight: bold;
+  color: #5d67f5;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* 頁腳 */
+footer {
+  margin-top: auto;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* 動畫 */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to 魏子翔的作業網站</h1>
+    <p class="sub">歡迎來到我的 HTML 作業展示頁</p>
+  </header>
+
+  <main class="container">
+    <h2>📘 我的作業列表</h2>
+    <div class="card-grid">
+      <a href="flex01.html" class="card fade-in">功課01</a>
+      <a href="flex02.html" class="card fade-in">功課02</a>
+      <a href="flex03.html" class="card fade-in">功課03</a>
+      <a href="flex04.html" class="card fade-in">功課04</a>
+      <a href="flex05.html" class="card fade-in">功課05</a>
+      <a href="功課06.html" class="card fade-in">無</a>
+      <a href="功課07.html" class="card fade-in">無</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 魏子翔 | HTML + CSS 練習</p>
+  </footer>
+</body>
+</html>
