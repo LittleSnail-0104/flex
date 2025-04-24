@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>貓咪與馬簡稱 : 馬咪</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.original img {
+  width: 285px;
+  height: 285px;
+  object-fit: cover;
+  
+  
+}
+
+.grid {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.tile {
+  background-image: url('3008.png');
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.a{
+    background-color: antiquewhite;
+}
+</style>
+<body>
+  <div class="container">
+    <!-- 原圖 -->
+    <div class="original">
+      <img src="3008.png" alt="原圖"><br><em>貓咪與馬簡稱 : 馬咪</em>
+    </div>
+    <div class="a"></div>
+
+    <!-- 打亂拼圖 -->
+    <div class="grid">
+      <div class="tile" style="background-position: 100% 0%;"></div>
+      <div class="tile" style="background-position: 0% 50%;"></div>
+      <div class="tile" style="background-position: 50% 0%;"></div>
+      <div class="tile" style="background-position: 100% 100%;"></div>
+      <div class="tile" style="background-position: 50% 50%;"></div>
+      <div class="tile" style="background-position: 0% 0%;"></div>
+      <div class="tile" style="background-position: 50% 100%;"></div>
+      <div class="tile" style="background-position: 100% 50%;"></div>
+      <div class="tile" style="background-position: 0% 100%;"></div>
+    </div>
+  </div>
+</body>
+</html>
